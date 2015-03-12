@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="<?php echo Yii::app()->language; ?>"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="<?php echo Yii::app()->language; ?>"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="<?php echo Yii::app()->language; ?>"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="<?php echo Yii::app()->language; ?>"> <!--<![endif]-->
 <head>
 
 	<!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>Shoploop: eCommerce Website</title>
-	<meta name="description" content="">
+	<meta charset="<?php echo Yii::app()->charset; ?>">
+        <meta name="keywords" content="<?php echo CHtml::encode($this->keywords); ?>"/>
+        <meta name="description" content="<?php echo CHtml::encode($this->description); ?>"/>        
+	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<meta name="author" content="Ahmed Saeed">
 
 	<!-- Mobile Specific Metas
@@ -18,14 +19,18 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/home2.css">
-	<link rel="stylesheet" href="css/responsive.css">
 
+        <?php
+        $mainAssets = Yii::app()->getTheme()->getAssetsUrl();
+
+        Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/main.css');
+        Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/home2.css');
+        Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/responsive.css');        
+        ?>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+                <?php Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/ie8-and-down.css'); ?>
 	<![endif]-->
 
 	<!-- Favicons
@@ -154,13 +159,13 @@
 					</nav><!--end nav-->
 					
 					<div id="cart">
-						<a class="cart_dropdown" href="javascript:void(0);"><img src="images/icons/cart_icon.png" alt=""> 3 items<span>: $320.00<span></a>
+						<a class="cart_dropdown" href="javascript:void(0);"><img src="<?php echo $mainAssets.'/images/icons/cart_icon.png' ?>" alt=""> 3 items<span>: $320.00<span></a>
 						<div class="cart_content">
 							<b class="cart_content_arrow"></b>
 							<ul>
 								<li class="clearfix">
 									<div class="cart_product_name">
-										<img src="images/photos/dropdown_cart_image.jpg" alt="product image">
+										<img src="<?php echo $mainAssets.'/images/photos/dropdown_cart_image.jpg' ?>" alt="product image">
 										<span>
 											<strong><a href="#">product Name Here and long</a></strong><br>
 											Color: black<br>
@@ -177,7 +182,7 @@
 								</li>
 								<li class="clearfix">
 									<div class="cart_product_name">
-										<img src="images/photos/dropdown_cart_image.jpg" alt="product image">
+										<img src="<?php echo $mainAssets.'/images/photos/dropdown_cart_image.jpg' ?>" alt="product image">
 										<span>
 											<strong><a href="#">product Name Here and long</a></strong><br>
 											Color: black<br>
@@ -241,7 +246,7 @@
 			        >
 						<li class="clearfix">
 							<div class="slide_img">
-								<img src="images/icons/iphone_4_icon.png" alt="">
+                                                            <imj src="<?php echo $mainAssets.'/images/icons/iphone_4_icon.png' ?>" alt="">
 							</div>
 							<div class="flex-caption">
 								<h5>Now it's available<br><span>IPhone 4 is Released</span></h5>
@@ -257,7 +262,7 @@
 
 						<li class="clearfix">
 							<div class="slide_img">
-								<img src="images/icons/iphone_4_icon2.png" alt="">
+								<img src="<?php echo $mainAssets.'/images/icons/iphone_4_icon2.png' ?>" alt="">
 							</div>
 							<div class="flex-caption">
 								<h5>Now it's available<br><span>IPhone 4 is Released</span></h5>
@@ -312,7 +317,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -326,7 +331,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -340,7 +345,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -353,7 +358,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -368,7 +373,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -382,7 +387,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -396,7 +401,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -409,7 +414,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -446,7 +451,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -459,7 +464,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -472,7 +477,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -485,7 +490,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -500,7 +505,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -513,7 +518,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -526,7 +531,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -539,7 +544,7 @@
 								<a class="cart" href="#">cart</a>
 							</div>
 							<a href="#">
-								<img src="images/photos/four_column.jpg" alt="product">
+								<img src="<?php echo $mainAssets.'/images/photos/four_column.jpg' ?>" alt="product">
 							</a>
 						</div>
 						<h6><a href="#">Product Name Here</a></h6>
@@ -630,41 +635,41 @@
 					<ul>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_adidas-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_adidas-130x130.jpg' ?>" alt="brand">
 							</a></li>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_asics-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_asics-130x130.jpg' ?>" alt="brand">
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_conv-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_conv-130x130.jpg' ?>" alt="brand">
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_nike-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_nike-130x130.jpg' ?>" alt="brand">
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_puma-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_puma-130x130.jpg' ?>" alt="brand">
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_rbk-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_rbk-130x130.jpg' ?>" alt="brand">
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_nike-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_nike-130x130.jpg' ?>" alt="brand">
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="images/brands/logo_asics-130x130.jpg" alt="brand">
+								<img src="<?php echo $mainAssets.'/images/brands/logo_asics-130x130.jpg' ?>" alt="brand">
 							</a>
 						</li>
 					</ul>
@@ -843,27 +848,44 @@
 	================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <!-- jQuery.dropKick plug-in -->
-    <link rel="stylesheet" href="js/dropKick/dropkick.css">
-	<script src="js/dropKick/jquery.dropkick-1.0.0.js"></script>
+    <?php
+        Yii::app()->getClientScript()->registerCssFile($mainAssets . '/js/dropKick/dropkick.css');    
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/dropKick/jquery.dropkick-1.0.0.js');
+    ?>
 	<!-- jQuery.nicescroll plug-in -->
-	<script src="js/jquery.nicescroll.js"></script>
+    <?php
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/jquery.nicescroll.js'); 
+    ?>
 	<!-- jQuery.tweet plug-in -->
-	<script src="js/jquery.tweet.js"></script>
+    <?php
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/jquery.tweet.js');
+    ?>
 	<!-- jQuery.cycle2 plug-in -->
-	<script src="js/jquery.cycle2.min.js"></script>
-	<script src="js/jquery.cycle2.tile.min.js"></script>
+    <?php
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/jquery.cycle2.min.js');
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/jquery.cycle2.tile.min.js');
+    ?>
 	<!-- jQuery.jcarousellite plug-in -->
-	<script src="js/jcarousellite_1.0.1.min.js"></script>
-	<!-- jQuery.fancybox plug-in -->
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css">
-	<script src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<!-- jQuery.etalage plug-in -->
-	<script src="js/jquery.etalage.min.js"></script>
-	<!-- jQuery.cookie plug-in -->
-	<script src="js/jquery.cookie.js"></script>
-	<!--my custom code-->	
-	<script src="js/main.js"></script>
-	
+    <?php
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/jcarousellite_1.0.1.min.js');
+    ?>
+        <!-- jQuery.fancybox plug-in -->
+    <?php
+        Yii::app()->getClientScript()->registerCssFile($mainAssets . '/js/fancybox/jquery.fancybox-1.3.4.css'); 
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/fancybox/jquery.fancybox-1.3.4.pack.js');
+    ?>
+        <!-- jQuery.etalage plug-in -->
+    <?php
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/jquery.etalage.min.js');
+    ?>
+        <!-- jQuery.cookie plug-in -->
+    <?php
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/jquery.cookie.js');
+    ?>
+        <!--my custom code-->	
+    <?php
+        Yii::app()->getClientScript()->registerScriptFile($mainAssets . '/js/main.js');	
+    ?>
 
 <!-- End Document
 ================================================== -->
