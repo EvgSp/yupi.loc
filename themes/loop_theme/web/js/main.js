@@ -1,3 +1,4 @@
+/*global ASSETS_URL */
 // building select nav for mobile width only
 $(function(){
 	// building h6 item to toggle the main nav menu
@@ -326,14 +327,14 @@ $(function(){
 	// backgrounds
 	$('#active-bg').remove();
 	$('head')
-	.append('<link rel="stylesheet" id="active-bg" href="css/bg/'+get_cookie+'.css">');
+	.append('<link rel="stylesheet" id="active-bg" href="'+baseUrl+'css/bg/'+get_cookie+'.css">');
 
 	$("#sideWidget div.bgPatterns").find('a').bind('click', function(e) {
 		e.preventDefault();
 		var bgName = $(this).text();
 		$.cookie(cookie_name, bgName, cookie_options);
 		$('head')
-		.append('<link rel="stylesheet" id="active-bg" href="css/bg/'+bgName+'.css">');
+		.append('<link rel="stylesheet" id="active-bg" href="'+baseUrl+'/css/bg/'+bgName+'.css">');
 	});
 });
 /*=========== end it ==========*/
