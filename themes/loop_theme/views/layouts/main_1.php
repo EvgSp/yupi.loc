@@ -47,7 +47,7 @@
         <header>
 
             <?php if (Yii::app()->hasModule('menu')): { ?>
-                <?php $this->widget('application.modules.menu.widgets.MenuWidget', ['name' => 'user-menu', 'layout' => 'topmenu']); ?>
+                <?php $this->widget('application.modules.menu.widgets.MenuWidget', ['name' => 'top-menu', 'layout' => 'topmenu']); ?>
             <?php } endif; ?>
 
 

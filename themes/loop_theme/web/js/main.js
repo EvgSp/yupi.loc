@@ -1,4 +1,4 @@
-/*global ASSETS_URL */
+/*global baseUrl */
 // building select nav for mobile width only
 $(function(){
 	// building h6 item to toggle the main nav menu
