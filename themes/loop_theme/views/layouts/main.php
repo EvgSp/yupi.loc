@@ -27,11 +27,12 @@
         Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/home2.css');
         Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/responsive.css');
         ?>
-        <!--[if lt IE 9]>
+        <?php  echo '<!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-                <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-        <?php Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/ie8-and-down.css'); ?>
-        <![endif]-->
+                <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>';
+                Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/ie8-and-down.css'); 
+                echo '<![endif]-->'
+        ?>
 
         <!-- Favicons
         ================================================== -->
@@ -54,9 +55,12 @@
             <div id="middleHeader">
                 <div class="container">
                     <div class="sixteen columns">
-                        <div id="logo">
-                            <h1><a href="index.html">logo</a></h1>
-                        </div><!--end logo-->
+                        <div id="contact">
+                            <ul>
+                                <li>Нижний Новгород</li>
+                                <li><small>(831)</small> 220-72-42 (43)</li>
+                            </ul>
+                        </div>
 
                         <form action="#" method="post" accept-charset="utf-8">
                             <label>

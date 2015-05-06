@@ -1,16 +1,9 @@
             <div id="topHeader">
                 <div class="container">
                     <div class="sixteen columns">
-                        <ul id="currency">
-                            <li class="active_currency"><a href="#">$</a></li>
-                            <li><a href="#">£</a></li>
-                            <li><a href="#">€</a></li>
-                        </ul>
-                        <ul id="lang">
-                            <li class="active_lang"><a href="#">en</a></li>
-                            <li><a href="#">es</a></li>
-                            <li><a href="#">fr</a></li>
-                        </ul>
+                        <div id="logo">
+                            <h1><a href="index.html">logo</a></h1>
+                        </div><!--end logo-->
 
                         <ul id="topNav">
                             <?php foreach ($params[items] as $param) { ?>

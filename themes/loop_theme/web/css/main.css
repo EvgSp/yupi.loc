@@ -580,52 +580,29 @@ select {
 
 /* #header Styles
 ================================================== */
+#topHeader h6 {
+	display: none; /* this is just for the mobile display */
+}
+
+/*========== logo =========*/
+#topHeader #logo {
+	float:left;
+	margin: 3px 0 0 10px;
+	
+}
+#topHeader #logo h1 a {
+	width:186px;
+	height:45px;
+	display: block;
+	font:0/0 a;
+	background:url('../images/icons/FotoNN.png') no-repeat left top;
+}
+
 /*============ topHeader =============*/
 #topHeader {
 	width:100%;
 	background:#4b4b4b;
 	border-bottom:3px solid #e81962;
-}
-
-#topHeader h6 {
-	display: none; /* will be visible in responsive only */
-}
-
-/*=========== ul#currency  &  ul#lang ============*/
-#topHeader ul#currency, #topHeader ul#lang {
-	float:left;
-	margin-right:20px;
-}
-#topHeader ul#currency li, #topHeader ul#lang li {
-	float:left;
-	padding:12px 0;
-	display: block
-}
-#topHeader ul#currency li a, #topHeader ul#lang li a {
-	font-size:12px;
-	font-weight:400;
-	margin-right:3px;
-	padding:0 5px;
-	display: block;
-	background:#646464;
-	color:#bfbfbf;
-	line-height: 26px;
-	text-transform: uppercase;
-	border:1px solid #777;
-	/*box shadow*/
-	-webkit-box-shadow: inset 0px 1px 0 #444;
-	box-shadow: inset 0 1px 0 #444;
-	/* text-shadow */
-	text-shadow:0 1px 0 #000;
-}
-#topHeader ul#currency li a:hover, #topHeader ul#lang li a:hover {
-	color:#fff;
-}
-#topHeader ul#currency li.active_currency a, #topHeader ul#lang li.active_lang a {
-	color:#fff;
-}
-#topHeader ul#currency li.active_currency, #topHeader ul#lang li.active_lang {
-	background:url('../images/icons/red_top_arrow.png') no-repeat center bottom;
 }
 
 /*============= ul#topNav ============*/
@@ -664,24 +641,21 @@ select {
 
 }
 
-
 /*====== middleHeader
 ============================================================*/
 #middleHeader {
-	padding:30px 0;
-}
-/*========== logo =========*/
-#middleHeader #logo {
-	float:left;
-}
-#middleHeader #logo h1 a {
-	width:167px;
-	height:46px;
-	display: block;
-	font:0/0 a;
-	background:url('../images/icons/logo.png') no-repeat left top;
+	padding:15px 0;
 }
 
+#middleHeader #contact {
+	position: relative; 
+	float: left; 
+	height: 39px; 
+	margin: 1px 0 0 15px; 
+	top: -5px; 
+	font-size: 18px
+}
+	
 /*======= search form ========*/
 #middleHeader form {
 	float:right;
