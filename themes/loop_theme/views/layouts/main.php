@@ -30,8 +30,8 @@
         <?php  echo '<!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
                 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>';
-                Yii::app()->getClientScript()->registerCssFile($mainAssets . '/css/ie8-and-down.css'); 
-                echo '<![endif]-->'
+                echo '<link href="'.$mainAssets .'/css/ie8-and-down.css" type="text/css" rel="stylesheet">'; 
+                echo '<![endif]-->';
         ?>
 
         <!-- Favicons
