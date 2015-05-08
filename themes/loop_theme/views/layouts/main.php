@@ -48,9 +48,9 @@
         <!--start header-->
         <header>
 
-            <?php if (Yii::app()->hasModule('menu')): { ?>
-                    <?php $this->widget('application.modules.menu.widgets.MenuWidget', ['name' => 'user-menu', 'layout' => 'topmenu']); ?>
-                <?php } endif; ?>
+            <?php if (Yii::app()->hasModule('menu')) { 
+                $this->widget('application.modules.menu.widgets.MenuWidget', ['name' => 'user-menu', 'layout' => 'topmenu']);
+            } ?>
 
 
             <div id="middleHeader">
@@ -91,9 +91,9 @@
                 </div><!--end container-->
             </div><!--end middleHeader-->
 
-            <?php if (Yii::app()->hasModule('menu')): { ?>
-                    <?php $this->widget('application.modules.menu.widgets.MenuWidget', ['name' => 'top-menu', 'layout' => 'mainmenu']); ?>
-                <?php } endif; ?>
+            <?php if (Yii::app()->hasModule('menu')) {
+                $this->widget('application.modules.menu.widgets.MenuWidget', ['name' => 'top-menu', 'layout' => 'mainmenu']);
+            } ?>
 
 
         </header>

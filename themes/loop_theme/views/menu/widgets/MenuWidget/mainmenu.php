@@ -1,3 +1,5 @@
+<?php $mainAssets = Yii::app()->getTheme()->getAssetsUrl(); ?>
+
 <div class="container">
     <div class="sixteen columns">
         <div id="mainNav" class="clearfix">
@@ -50,13 +52,13 @@
             </nav><!--end nav-->
 
             <div id="cart">
-                <a class="cart_dropdown" href="javascript:void(0);"><img src="<?php echo $mainAssets . '/images/icons/cart_icon.png' ?>" alt=""> 3 items<span>: $320.00<span></a>
+                <a class="cart_dropdown" href="javascript:void(0);"><img src="<?php echo $mainAssets; ?>/images/icons/cart_icon.png" alt=""> 3 items<span>: $320.00<span></a>
                             <div class="cart_content">
                                 <b class="cart_content_arrow"></b>
                                 <ul>
                                     <li class="clearfix">
                                         <div class="cart_product_name">
-                                            <img src="<?php echo $mainAssets . '/images/photos/dropdown_cart_image.jpg' ?>" alt="product image">
+                                            <img src="<?php echo $mainAssets; ?>/images/photos/dropdown_cart_image.jpg" alt="product image">
                                             <span>
                                                 <strong><a href="#">product Name Here and long</a></strong><br>
                                                 Color: black<br>
@@ -73,7 +75,7 @@
                                     </li>
                                     <li class="clearfix">
                                         <div class="cart_product_name">
-                                            <img src="<?php echo $mainAssets . '/images/photos/dropdown_cart_image.jpg' ?>" alt="product image">
+                                            <img src="<?php echo $mainAssets; ?>/images/photos/dropdown_cart_image.jpg" alt="product image">
                                             <span>
                                                 <strong><a href="#">product Name Here and long</a></strong><br>
                                                 Color: black<br>

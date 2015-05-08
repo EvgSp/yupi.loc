@@ -116,14 +116,14 @@ div.box_head h3 {
 	-webkit-text-shadow:0 1px 0 #fff;
 	-o-text-shadow:0 1px 0 #fff;
 	text-shadow:0 1px 0 #fff;
-	background:url('../images/icons/bg/white_carbon.png') repeat left top;
+	background:url('../images/bg/white_carbon.png') repeat left top;
 }
 div.box_head div.pagers {
 	margin:-8px 0 0 0;
 	padding:0 0 0 0;
 	float:right;
 	padding-left:12px;
-	background:url('../images/icons/bg/white_carbon.png') repeat left top;
+	background:url('../images/bg/white_carbon.png') repeat left top;
 }
 div.box_head div.pagers a {
 	float:left;
