@@ -754,6 +754,11 @@ select {
 #mainNav nav h6 {
 	display: none; /* this is just for the mobile display */
 }
+#mainNav ul {
+    position: relative;
+    float: left;
+}
+
 #mainNav nav ul li {
 	height:48px;
 	float:left;
@@ -777,6 +782,11 @@ select {
 	font-weight:600;
 	text-transform:uppercase;
 	color:#323232;
+}
+#mainNav #catalog a {
+	color:#e81962;
+        font-size: 14px;
+        padding-right: 48px;
 }
 #mainNav nav ul li a.hasdropdown {
 	padding-right:18px;

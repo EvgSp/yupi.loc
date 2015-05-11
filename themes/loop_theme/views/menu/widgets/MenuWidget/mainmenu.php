@@ -5,46 +5,48 @@
         <div id="mainNav" class="clearfix">
             <nav>
                 <ul>
+                    <li id="catalog">
+                        <a class="hasdropdown" href="#">Каталог товаров</a>
+                    </li>
+                </ul>
+                <ul>
                     <li>
-                        <a class="hasdropdown" href="#">Pages</a>
+                        <a class="hasdropdown" href="#">О компании</a>
                         <ul class="submenu">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index2.html">Home 2</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog_post.html">Blog Post</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Блог</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a class="desktop hasdropdown" href="#">Desktop</a>
+                        <a class="hasdropdown" href="#">Покупателям</a>
                         <ul class="submenu">
-                            <li><a href="#">PC</a></li>
-                            <li><a href="#">Mac</a></li>
-                            <li><a href="#">Luinx</a></li>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                            <li><a href="#">Гарантия и сервис</a></li>
+                            <li><a href="#">Обратная связь</a></li>
                         </ul>
                     </li>
-                    <li><a class="labtops" href="#">Laptops</a></li>
                     <li>
-                        <a class="componients hasdropdown" href="#">Componients</a>
+                        <a class="hasdropdown" href="#">Выбор товара</a>
                         <ul class="submenu">
-                            <li><a href="#">Mic &amp; Trackballs</a></li>
-                            <li><a href="#">Mointors</a></li>
-                            <li><a href="#">Printers</a></li>
-                            <li><a href="#">Scanners</a></li>
-                            <li><a href="#">Web Cameras</a></li>
+                            <li><a href="#">Новости техники</a></li>
+                            <li><a href="#">Словарь терминов</a></li>
+                            <li><a href="#">Обзоры</a></li>
+                            <li><a href="#">Помощь в выборе</a></li>
                         </ul>
                     </li>
-                    <li><a class="tablets" href="#">Tablets</a></li>
-                    <li><a class="software" href="#">Software</a></li>
                     <li>
-                        <a class="watches hasdropdown" href="#">Watches</a>
+                        <a class="software hasdropdown" href="#">Фотошкола</a>
                         <ul class="submenu">
-                            <li><a href="#">Test one</a></li>
-                            <li><a href="#">Test Two</a></li>
-                            <li><a href="#">Test Three</a></li>
-                            <li><a href="#">Test Four</a></li>
-                            <li><a href="#">Test Five</a></li>
+                            <li><a href="#">Жанр</a></li>
+                            <li><a href="#">Композиция</a></li>
+                            <li><a href="#">Техника</a></li>
+                            <li><a href="#">Съемка</a></li>
+                            <li><a href="#">Обработка</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -52,7 +54,7 @@
             </nav><!--end nav-->
 
             <div id="cart">
-                <a class="cart_dropdown" href="javascript:void(0);"><img src="<?php echo $mainAssets; ?>/images/icons/cart_icon.png" alt=""> 3 items<span>: $320.00<span></a>
+                <a class="cart_dropdown" href="javascript:void(0);"><img src="<?php echo $mainAssets; ?>/images/icons/cart_icon.png" alt=""> 3 items<span>: $320.00</span></a>
                             <div class="cart_content">
                                 <b class="cart_content_arrow"></b>
                                 <ul>

@@ -6,8 +6,8 @@
                         </div><!--end logo-->
 
                         <ul id="topNav">
-                            <?php foreach ($params[items] as $param) { ?>
-                                <li><a href=<?php echo $param[url]?>><?php echo $param[label] ?></a></li>
+                            <?php foreach ($params['items'] as $param) { ?>
+                                <li><a href="<?php echo $param['url']; ?>"><?php echo $param['label']; ?></a></li>
                             <?php } ?>    
                         </ul>
 

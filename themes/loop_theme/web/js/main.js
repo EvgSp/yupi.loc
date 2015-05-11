@@ -327,7 +327,7 @@ $(function(){
 	// backgrounds
 	$('#active-bg').remove();
 	$('head')
-	.append('<link rel="stylesheet" id="active-bg" href="'+baseUrl+'css/bg/'+get_cookie+'.css">');
+	.append('<link rel="stylesheet" id="active-bg" href="'+baseUrl+'/css/bg/'+get_cookie+'.css">');
 
 	$("#sideWidget div.bgPatterns").find('a').bind('click', function(e) {
 		e.preventDefault();
