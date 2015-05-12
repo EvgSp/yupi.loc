@@ -783,7 +783,7 @@ select {
 	text-transform:uppercase;
 	color:#323232;
 }
-#mainNav #catalog a {
+#mainNav li#catalog > a {
 	color:#e81962;
         font-size: 14px;
         padding-right: 48px;

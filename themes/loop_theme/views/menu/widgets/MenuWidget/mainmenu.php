@@ -7,6 +7,12 @@
                 <ul>
                     <li id="catalog">
                         <a class="hasdropdown" href="#">Каталог товаров</a>
+                        <ul class="submenu">
+                            <li><a href="#">Фотоаппараты</a></li>
+                            <li><a href="#">Объективы</a></li>
+                            <li><a href="#">Вспышки</a></li>
+                            <li><a href="#">Студийное оборудование</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <ul>
