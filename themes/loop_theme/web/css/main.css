@@ -783,11 +783,6 @@ select {
 	text-transform:uppercase;
 	color:#323232;
 }
-#mainNav li#catalog > a {
-	color:#e81962;
-        font-size: 14px;
-        padding-right: 48px;
-}
 #mainNav nav ul li a.hasdropdown {
 	padding-right:18px;
 	background:url('../images/icons/arrow_down.png') no-repeat right 49%;
@@ -836,6 +831,7 @@ select {
 }
 #mainNav nav ul ul.submenu li:hover {
 	background: none;
+/*        padding-left: 20px; */
 }
 #mainNav nav ul ul.submenu li a:link, #mainNav nav ul ul.submenu li a:visited {
 	line-height: 12px;
@@ -856,6 +852,7 @@ select {
 }
 #mainNav nav ul ul.submenu li a:hover, #mainNav nav ul ul.submenu li a:active {
 	color:#000;
+        padding-left: 28px;
 }
 #mainNav nav ul ul.submenu li:first-child a {
 	border-top:none;
@@ -866,6 +863,22 @@ select {
 	display: block;
 }
 
+/*=========== catalog=============*/
+#mainNav ul#catalog li> a {
+	color:#e81962;
+        font-size: 14px;
+        padding: 0 36px 0 14px;
+        background:url('../images/icons/red_arrow_down.png') no-repeat right 49%;
+}
+#mainNav nav ul#catalog ul.submenu {
+    width: 220px;
+}
+#mainNav nav ul#catalog ul.submenu li a:link, #mainNav nav ul#catalog ul.submenu li a:visited {
+	padding:12px 20px 12px 26px;
+	font-size:12px;
+	color:#444;
+	background:url('../images/icons/arrow_right.png') no-repeat right center;
+}
 
 /*======= cart div style =========*/
 #mainNav #cart {

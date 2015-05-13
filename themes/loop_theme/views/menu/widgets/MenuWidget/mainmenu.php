@@ -4,8 +4,8 @@
     <div class="sixteen columns">
         <div id="mainNav" class="clearfix">
             <nav>
-                <ul>
-                    <li id="catalog">
+                <ul id="catalog">
+                    <li>
                         <a class="hasdropdown" href="#">Каталог товаров</a>
                         <ul class="submenu">
                             <li><a href="#">Фотоаппараты</a></li>
